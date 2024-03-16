@@ -28,7 +28,7 @@ car_threshold = .5
 
 cam_state = False
 
-
+#if there is already a video, delete it
 if os.path.exists('/home/raspu/Desktop/video.h264'):
     os.remove('/home/raspu/Desktop/video.h264')
 
