@@ -4,8 +4,7 @@ from gpiozero import DistanceSensor, DigitalInputDevice
 import imageio.v2 as imageio
 import os
 
-#intiializes camera
-camera = PiCamera()
+
 
 #continuously read the state of blocker done
 #when starting block is lifted (aka the digital pin reads 0 for the blocker) done
@@ -21,11 +20,20 @@ camera = PiCamera()
 #https://raspberrypi.stackexchange.com/questions/91784/gpiozero-button-when-pressed
 #https://stackoverflow.com/questions/753190/programmatically-generate-video-or-animated-gif-in-python
 
+
+#intiializes camera
+camera = PiCamera()
+
+#foil var
 foil = DigitalInputDevice(4)
+
+#sensor var
 ultrasonic = DistanceSensor(echo=17, trigger=5)
 
+#car dist var
 car_threshold = .5
 
+#camera state
 cam_state = False
 
 #if there is already a video, delete it
