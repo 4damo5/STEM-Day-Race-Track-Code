@@ -10,9 +10,9 @@ camera = PiCamera()
 #continuously read the state of blocker done
 #when starting block is lifted (aka the digital pin reads 0 for the blocker) done
 #start checking the Ultrasonic Sensor done
+#start camera, take video
 #if the sensor detects car done
-#start camera, take 5 pictures done 
-#stop camera, compile pictures 1-5 into gif done
+#stop when they get to end
 
 #Sources:
 #https://randomnerdtutorials.com/raspberry-pi-digital-inputs-python/
